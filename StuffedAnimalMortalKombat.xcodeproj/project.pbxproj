@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91953BE51B2729C200602C59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953BE41B2729C200602C59 /* AppDelegate.swift */; };
+		91953BE71B2729C200602C59 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 91953BE61B2729C200602C59 /* GameScene.sks */; };
+		91953BE91B2729C200602C59 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953BE81B2729C200602C59 /* GameScene.swift */; };
+		91953BEB1B2729C200602C59 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953BEA1B2729C200602C59 /* GameViewController.swift */; };
+		91953BEE1B2729C200602C59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91953BEC1B2729C200602C59 /* Main.storyboard */; };
+		91953BF01B2729C200602C59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91953BEF1B2729C200602C59 /* Images.xcassets */; };
+		91953BF31B2729C200602C59 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91953BF11B2729C200602C59 /* LaunchScreen.xib */; };
+		91953BFF1B2729C200602C59 /* StuffedAnimalMortalKombatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953BFE1B2729C200602C59 /* StuffedAnimalMortalKombatTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91953BF91B2729C200602C59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91953BD71B2729C200602C59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91953BDE1B2729C200602C59;
+			remoteInfo = StuffedAnimalMortalKombat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		91953BDF1B2729C200602C59 /* StuffedAnimalMortalKombat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StuffedAnimalMortalKombat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91953BE31B2729C200602C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91953BE41B2729C200602C59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91953BE61B2729C200602C59 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		91953BE81B2729C200602C59 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		91953BEA1B2729C200602C59 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		91953BED1B2729C200602C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91953BEF1B2729C200602C59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		91953BF21B2729C200602C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		91953BF81B2729C200602C59 /* StuffedAnimalMortalKombatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StuffedAnimalMortalKombatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91953BFD1B2729C200602C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91953BFE1B2729C200602C59 /* StuffedAnimalMortalKombatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StuffedAnimalMortalKombatTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91953BDC1B2729C200602C59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91953BF51B2729C200602C59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91953BD61B2729C200602C59 = {
+			isa = PBXGroup;
+			children = (
+				91953BE11B2729C200602C59 /* StuffedAnimalMortalKombat */,
+				91953BFB1B2729C200602C59 /* StuffedAnimalMortalKombatTests */,
+				91953BE01B2729C200602C59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91953BE01B2729C200602C59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91953BDF1B2729C200602C59 /* StuffedAnimalMortalKombat.app */,
+				91953BF81B2729C200602C59 /* StuffedAnimalMortalKombatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91953BE11B2729C200602C59 /* StuffedAnimalMortalKombat */ = {
+			isa = PBXGroup;
+			children = (
+				91953BE41B2729C200602C59 /* AppDelegate.swift */,
+				91953BE61B2729C200602C59 /* GameScene.sks */,
+				91953BE81B2729C200602C59 /* GameScene.swift */,
+				91953BEA1B2729C200602C59 /* GameViewController.swift */,
+				91953BEC1B2729C200602C59 /* Main.storyboard */,
+				91953BEF1B2729C200602C59 /* Images.xcassets */,
+				91953BF11B2729C200602C59 /* LaunchScreen.xib */,
+				91953BE21B2729C200602C59 /* Supporting Files */,
+			);
+			path = StuffedAnimalMortalKombat;
+			sourceTree = "<group>";
+		};
+		91953BE21B2729C200602C59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91953BE31B2729C200602C59 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91953BFB1B2729C200602C59 /* StuffedAnimalMortalKombatTests */ = {
+			isa = PBXGroup;
+			children = (
+				91953BFE1B2729C200602C59 /* StuffedAnimalMortalKombatTests.swift */,
+				91953BFC1B2729C200602C59 /* Supporting Files */,
+			);
+			path = StuffedAnimalMortalKombatTests;
+			sourceTree = "<group>";
+		};
+		91953BFC1B2729C200602C59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91953BFD1B2729C200602C59 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91953BDE1B2729C200602C59 /* StuffedAnimalMortalKombat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91953C021B2729C200602C59 /* Build configuration list for PBXNativeTarget "StuffedAnimalMortalKombat" */;
+			buildPhases = (
+				91953BDB1B2729C200602C59 /* Sources */,
+				91953BDC1B2729C200602C59 /* Frameworks */,
+				91953BDD1B2729C200602C59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StuffedAnimalMortalKombat;
+			productName = StuffedAnimalMortalKombat;
+			productReference = 91953BDF1B2729C200602C59 /* StuffedAnimalMortalKombat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91953BF71B2729C200602C59 /* StuffedAnimalMortalKombatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91953C051B2729C200602C59 /* Build configuration list for PBXNativeTarget "StuffedAnimalMortalKombatTests" */;
+			buildPhases = (
+				91953BF41B2729C200602C59 /* Sources */,
+				91953BF51B2729C200602C59 /* Frameworks */,
+				91953BF61B2729C200602C59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91953BFA1B2729C200602C59 /* PBXTargetDependency */,
+			);
+			name = StuffedAnimalMortalKombatTests;
+			productName = StuffedAnimalMortalKombatTests;
+			productReference = 91953BF81B2729C200602C59 /* StuffedAnimalMortalKombatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91953BD71B2729C200602C59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Kyle Brooks Robinson";
+				TargetAttributes = {
+					91953BDE1B2729C200602C59 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					91953BF71B2729C200602C59 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 91953BDE1B2729C200602C59;
+					};
+				};
+			};
+			buildConfigurationList = 91953BDA1B2729C200602C59 /* Build configuration list for PBXProject "StuffedAnimalMortalKombat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91953BD61B2729C200602C59;
+			productRefGroup = 91953BE01B2729C200602C59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91953BDE1B2729C200602C59 /* StuffedAnimalMortalKombat */,
+				91953BF71B2729C200602C59 /* StuffedAnimalMortalKombatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91953BDD1B2729C200602C59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91953BF31B2729C200602C59 /* LaunchScreen.xib in Resources */,
+				91953BF01B2729C200602C59 /* Images.xcassets in Resources */,
+				91953BE71B2729C200602C59 /* GameScene.sks in Resources */,
+				91953BEE1B2729C200602C59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91953BF61B2729C200602C59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91953BDB1B2729C200602C59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91953BE91B2729C200602C59 /* GameScene.swift in Sources */,
+				91953BEB1B2729C200602C59 /* GameViewController.swift in Sources */,
+				91953BE51B2729C200602C59 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91953BF41B2729C200602C59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91953BFF1B2729C200602C59 /* StuffedAnimalMortalKombatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91953BFA1B2729C200602C59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91953BDE1B2729C200602C59 /* StuffedAnimalMortalKombat */;
+			targetProxy = 91953BF91B2729C200602C59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		91953BEC1B2729C200602C59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91953BED1B2729C200602C59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		91953BF11B2729C200602C59 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91953BF21B2729C200602C59 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91953C001B2729C200602C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91953C011B2729C200602C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91953C031B2729C200602C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StuffedAnimalMortalKombat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		91953C041B2729C200602C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StuffedAnimalMortalKombat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		91953C061B2729C200602C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StuffedAnimalMortalKombatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StuffedAnimalMortalKombat.app/StuffedAnimalMortalKombat";
+			};
+			name = Debug;
+		};
+		91953C071B2729C200602C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StuffedAnimalMortalKombatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StuffedAnimalMortalKombat.app/StuffedAnimalMortalKombat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91953BDA1B2729C200602C59 /* Build configuration list for PBXProject "StuffedAnimalMortalKombat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91953C001B2729C200602C59 /* Debug */,
+				91953C011B2729C200602C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91953C021B2729C200602C59 /* Build configuration list for PBXNativeTarget "StuffedAnimalMortalKombat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91953C031B2729C200602C59 /* Debug */,
+				91953C041B2729C200602C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		91953C051B2729C200602C59 /* Build configuration list for PBXNativeTarget "StuffedAnimalMortalKombatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91953C061B2729C200602C59 /* Debug */,
+				91953C071B2729C200602C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91953BD71B2729C200602C59 /* Project object */;
+}
