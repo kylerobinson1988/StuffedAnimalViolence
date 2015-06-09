@@ -18,6 +18,11 @@
 		91953C0A1B272C4700602C59 /* iPhoneMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91953C081B272C4700602C59 /* iPhoneMain.storyboard */; };
 		91953C0D1B273B6100602C59 /* ControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C0C1B273B6100602C59 /* ControllerViewController.swift */; };
 		91953C0F1B273C6E00602C59 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C0E1B273C6E00602C59 /* Connector.swift */; };
+		91953C121B277B9700602C59 /* JoinSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C111B277B9700602C59 /* JoinSessionViewController.swift */; };
+		91953C161B277CA400602C59 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C151B277CA400602C59 /* WelcomeViewController.swift */; };
+		91953C1A1B2781E300602C59 /* ControllerDecor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C191B2781E300602C59 /* ControllerDecor.swift */; };
+		91953C1C1B2781F600602C59 /* ControllerButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C1B1B2781F600602C59 /* ControllerButtons.swift */; };
+		91953C1E1B2791A700602C59 /* PowerBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C1D1B2791A700602C59 /* PowerBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,13 @@
 		91953C091B272C4700602C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPhoneMain.storyboard; sourceTree = "<group>"; };
 		91953C0C1B273B6100602C59 /* ControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerViewController.swift; sourceTree = "<group>"; };
 		91953C0E1B273C6E00602C59 /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
+		91953C111B277B9700602C59 /* JoinSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinSessionViewController.swift; sourceTree = "<group>"; };
+		91953C151B277CA400602C59 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		91953C171B277CFE00602C59 /* steelfish rg it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "steelfish rg it.ttf"; sourceTree = "<group>"; };
+		91953C181B277CFE00602C59 /* steelfish rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "steelfish rg.ttf"; sourceTree = "<group>"; };
+		91953C191B2781E300602C59 /* ControllerDecor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerDecor.swift; sourceTree = "<group>"; };
+		91953C1B1B2781F600602C59 /* ControllerButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerButtons.swift; sourceTree = "<group>"; };
+		91953C1D1B2791A700602C59 /* PowerBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +99,8 @@
 		91953BE11B2729C200602C59 /* StuffedAnimalMortalKombat */ = {
 			isa = PBXGroup;
 			children = (
-				91953BEA1B2729C200602C59 /* GameViewController.swift */,
-				91953C0C1B273B6100602C59 /* ControllerViewController.swift */,
-				91953BEC1B2729C200602C59 /* iPadMain.storyboard */,
-				91953C081B272C4700602C59 /* iPhoneMain.storyboard */,
+				91953C141B277BCC00602C59 /* iPad */,
+				91953C131B277BA200602C59 /* iPhone */,
 				91953C101B273C7E00602C59 /* RandomStuff */,
 				91953C0B1B273B2C00602C59 /* GameFlow */,
 				91953BE21B2729C200602C59 /* Supporting Files */,
@@ -101,6 +111,8 @@
 		91953BE21B2729C200602C59 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				91953C171B277CFE00602C59 /* steelfish rg it.ttf */,
+				91953C181B277CFE00602C59 /* steelfish rg.ttf */,
 				91953BE41B2729C200602C59 /* AppDelegate.swift */,
 				91953BEF1B2729C200602C59 /* Images.xcassets */,
 				91953BF11B2729C200602C59 /* LaunchScreen.xib */,
@@ -139,8 +151,31 @@
 			isa = PBXGroup;
 			children = (
 				91953C0E1B273C6E00602C59 /* Connector.swift */,
+				91953C191B2781E300602C59 /* ControllerDecor.swift */,
+				91953C1B1B2781F600602C59 /* ControllerButtons.swift */,
+				91953C1D1B2791A700602C59 /* PowerBar.swift */,
 			);
 			name = RandomStuff;
+			sourceTree = "<group>";
+		};
+		91953C131B277BA200602C59 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				91953C081B272C4700602C59 /* iPhoneMain.storyboard */,
+				91953C151B277CA400602C59 /* WelcomeViewController.swift */,
+				91953C111B277B9700602C59 /* JoinSessionViewController.swift */,
+				91953C0C1B273B6100602C59 /* ControllerViewController.swift */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		91953C141B277BCC00602C59 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				91953BEA1B2729C200602C59 /* GameViewController.swift */,
+				91953BEC1B2729C200602C59 /* iPadMain.storyboard */,
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,10 +281,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				91953C0D1B273B6100602C59 /* ControllerViewController.swift in Sources */,
+				91953C1A1B2781E300602C59 /* ControllerDecor.swift in Sources */,
 				91953BE91B2729C200602C59 /* GameScene.swift in Sources */,
+				91953C1C1B2781F600602C59 /* ControllerButtons.swift in Sources */,
 				91953BEB1B2729C200602C59 /* GameViewController.swift in Sources */,
+				91953C1E1B2791A700602C59 /* PowerBar.swift in Sources */,
+				91953C121B277B9700602C59 /* JoinSessionViewController.swift in Sources */,
 				91953C0F1B273C6E00602C59 /* Connector.swift in Sources */,
 				91953BE51B2729C200602C59 /* AppDelegate.swift in Sources */,
+				91953C161B277CA400602C59 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,8 +2,388 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="e5x-4S-Vnh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="steelfish rg it.ttf">
+            <string>SteelfishRg-Italic</string>
+            <string>SteelfishRg-Italic</string>
+        </mutableArray>
+        <mutableArray key="steelfish rg.ttf">
+            <string>SteelfishRg-Regular</string>
+            <string>SteelfishRg-Regular</string>
+            <string>SteelfishRg-Regular</string>
+            <string>SteelfishRg-Regular</string>
+            <string>SteelfishRg-Regular</string>
+            <string>SteelfishRg-Regular</string>
+            <string>SteelfishRg-Regular</string>
+            <string>SteelfishRg-Regular</string>
+            <string>SteelfishRg-Regular</string>
+            <string>SteelfishRg-Regular</string>
+            <string>SteelfishRg-Regular</string>
+            <string>SteelfishRg-Regular</string>
+            <string>SteelfishRg-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="yJf-DI-wvP">
+            <objects>
+                <viewController id="VX6-By-eRG" customClass="WelcomeViewController" customModule="StuffedAnimalMortalKombat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Swa-L9-SXk"/>
+                        <viewControllerLayoutGuide type="bottom" id="ona-Cu-tbx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="plI-n8-9KI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STUFFED ANIMAL VIOLENCE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiJ-XR-2OK">
+                                <rect key="frame" x="16" y="28" width="568" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="jMx-18-fOX"/>
+                                    <constraint firstAttribute="height" constant="48" id="kIL-XW-YxM"/>
+                                    <constraint firstAttribute="width" constant="568" id="knM-4u-oij"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SteelfishRg-Italic" family="Steelfish" pointSize="40"/>
+                                <color key="textColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jMx-18-fOX"/>
+                                        <exclude reference="knM-4u-oij"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MAKE IT GOOD." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9OU-Vf-A2N">
+                                <rect key="frame" x="16" y="126" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoU-H7-jk7">
+                                <rect key="frame" x="16" y="538" width="568" height="54"/>
+                                <color key="backgroundColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="568" id="CSa-aI-MKJ"/>
+                                    <constraint firstAttribute="height" constant="54" id="H8y-W3-lbw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="38"/>
+                                <state key="normal" title="PROCEED ONWARD.">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CSa-aI-MKJ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="proceedButtonPressed:" destination="VX6-By-eRG" eventType="touchUpInside" id="Lum-Ku-atb"/>
+                                    <segue destination="qu0-cu-xmE" kind="show" id="iCy-vW-XN7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a username, fool." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q97-da-gLT">
+                                <rect key="frame" x="16" y="84" width="568" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="lgt-hC-RAU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your skin color." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clc-Oc-7IK">
+                                <rect key="frame" x="16" y="164" width="568" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="63O-T6-zvd"/>
+                                    <constraint firstAttribute="width" constant="568" id="mjR-fe-BZh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="w7L-xk-jae"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xj-K0-cl5" customClass="ControllerActionButtons" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                <rect key="frame" x="275" y="206" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="f5B-m9-c3q"/>
+                                    <constraint firstAttribute="width" constant="40" id="xx2-cY-fFa"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.20494962990000001" green="0.86716180099999995" blue="0.57288240130000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="greenButton:" destination="VX6-By-eRG" eventType="touchUpInside" id="xVo-iL-ymC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rJ-jQ-fhW" customClass="ControllerActionButtons" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                <rect key="frame" x="227" y="206" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="8G9-YE-93Y"/>
+                                    <constraint firstAttribute="height" constant="40" id="aMX-yp-y6V"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.99607998129999997" green="0.85882002120000001" blue="0.36078000069999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="yellowButton:" destination="VX6-By-eRG" eventType="touchUpInside" id="X25-zn-F30"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQ6-PC-wUj" customClass="ControllerActionButtons" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                <rect key="frame" x="323" y="206" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZZg-Kv-JXy"/>
+                                    <constraint firstAttribute="width" constant="40" id="o9H-rD-Jhv"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.18220623150000001" green="0.8409673876" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="blueButton:" destination="VX6-By-eRG" eventType="touchUpInside" id="IO9-a6-jTc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAP-V8-04X" customClass="ControllerActionButtons" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                <rect key="frame" x="371" y="206" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="feD-Kg-xk5"/>
+                                    <constraint firstAttribute="width" constant="40" id="pM3-ba-Isv"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.60658169750000002" green="0.3307404223" blue="0.97254997489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="purpleButton:" destination="VX6-By-eRG" eventType="touchUpInside" id="MIS-OH-sF6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbp-AL-bna" customClass="ControllerActionButtons" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                <rect key="frame" x="179" y="206" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="FTD-N3-6OJ"/>
+                                    <constraint firstAttribute="height" constant="40" id="PY5-wh-smT"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.97254997489999995" green="0.54901999239999999" blue="0.16471000020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="orangeButton:" destination="VX6-By-eRG" eventType="touchUpInside" id="TOs-cV-63s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRt-LC-Y2I" customClass="ControllerActionButtons" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                <rect key="frame" x="131" y="206" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="dWD-Ok-mnZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="mVo-4D-Q0Q"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="1" green="0.26937876502475333" blue="0.22400864832336942" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="redButton:" destination="VX6-By-eRG" eventType="touchUpInside" id="Tdj-Et-UTv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="was-2P-lds" customClass="ControllerActionButtons" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                <rect key="frame" x="419" y="206" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="B7S-XX-khy"/>
+                                    <constraint firstAttribute="height" constant="40" id="guz-GF-2UD"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="blackButton:" destination="VX6-By-eRG" eventType="touchUpInside" id="hGJ-zd-pQA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hiJ-XR-2OK" secondAttribute="trailing" constant="16" id="09N-tc-GGW"/>
+                            <constraint firstItem="clc-Oc-7IK" firstAttribute="top" secondItem="9OU-Vf-A2N" secondAttribute="bottom" constant="8" id="0cD-qV-eP3"/>
+                            <constraint firstItem="Dbp-AL-bna" firstAttribute="top" secondItem="clc-Oc-7IK" secondAttribute="bottom" constant="8" id="1fL-we-mrF"/>
+                            <constraint firstAttribute="trailing" secondItem="VoU-H7-jk7" secondAttribute="trailing" constant="16" id="2xE-4c-SC1"/>
+                            <constraint firstItem="VoU-H7-jk7" firstAttribute="top" secondItem="9OU-Vf-A2N" secondAttribute="bottom" constant="34" id="7Z1-AG-nYK"/>
+                            <constraint firstItem="ona-Cu-tbx" firstAttribute="top" secondItem="VoU-H7-jk7" secondAttribute="bottom" constant="8" id="ChS-al-ef6"/>
+                            <constraint firstItem="hiJ-XR-2OK" firstAttribute="top" secondItem="Swa-L9-SXk" secondAttribute="bottom" constant="8" id="Cof-0M-XPt"/>
+                            <constraint firstItem="hiJ-XR-2OK" firstAttribute="top" secondItem="Swa-L9-SXk" secondAttribute="bottom" constant="23" id="HOZ-wH-qMr"/>
+                            <constraint firstItem="q97-da-gLT" firstAttribute="top" secondItem="hiJ-XR-2OK" secondAttribute="bottom" constant="8" id="INC-YE-Gdl"/>
+                            <constraint firstItem="VoU-H7-jk7" firstAttribute="leading" secondItem="plI-n8-9KI" secondAttribute="leading" constant="16" id="Kbt-Bv-2Vl"/>
+                            <constraint firstItem="5Xj-K0-cl5" firstAttribute="leading" secondItem="9rJ-jQ-fhW" secondAttribute="trailing" constant="8" id="M8A-8C-fVY"/>
+                            <constraint firstItem="9OU-Vf-A2N" firstAttribute="top" secondItem="q97-da-gLT" secondAttribute="bottom" constant="8" id="Mce-Vk-fIU"/>
+                            <constraint firstAttribute="trailing" secondItem="q97-da-gLT" secondAttribute="trailing" constant="16" id="NiN-GX-EMh"/>
+                            <constraint firstItem="was-2P-lds" firstAttribute="leading" secondItem="uAP-V8-04X" secondAttribute="trailing" constant="8" id="ONC-QY-QbG"/>
+                            <constraint firstItem="was-2P-lds" firstAttribute="top" secondItem="clc-Oc-7IK" secondAttribute="bottom" constant="8" id="QNz-oo-V8k"/>
+                            <constraint firstItem="uAP-V8-04X" firstAttribute="top" secondItem="clc-Oc-7IK" secondAttribute="bottom" constant="8" id="RkZ-Rh-ffP"/>
+                            <constraint firstItem="Dbp-AL-bna" firstAttribute="leading" secondItem="QRt-LC-Y2I" secondAttribute="trailing" constant="8" id="Sty-Z0-fPj"/>
+                            <constraint firstItem="gQ6-PC-wUj" firstAttribute="top" secondItem="clc-Oc-7IK" secondAttribute="bottom" constant="8" id="YuR-TG-O8J"/>
+                            <constraint firstItem="9OU-Vf-A2N" firstAttribute="leading" secondItem="plI-n8-9KI" secondAttribute="leading" constant="16" id="a6a-OW-akJ"/>
+                            <constraint firstItem="clc-Oc-7IK" firstAttribute="leading" secondItem="plI-n8-9KI" secondAttribute="leading" constant="16" id="aXJ-iN-KEC"/>
+                            <constraint firstAttribute="trailing" secondItem="9OU-Vf-A2N" secondAttribute="trailing" constant="16" id="ahb-zM-bn5"/>
+                            <constraint firstAttribute="centerX" secondItem="Dbp-AL-bna" secondAttribute="centerX" constant="101" id="air-sA-7rZ"/>
+                            <constraint firstItem="9rJ-jQ-fhW" firstAttribute="top" secondItem="clc-Oc-7IK" secondAttribute="bottom" constant="8" id="awz-QP-ehS"/>
+                            <constraint firstItem="QRt-LC-Y2I" firstAttribute="top" secondItem="clc-Oc-7IK" secondAttribute="bottom" constant="8" id="b3n-ZZ-deK"/>
+                            <constraint firstItem="q97-da-gLT" firstAttribute="leading" secondItem="plI-n8-9KI" secondAttribute="leading" constant="16" id="b78-Mw-cBx"/>
+                            <constraint firstAttribute="trailing" secondItem="clc-Oc-7IK" secondAttribute="trailing" constant="16" id="eSg-iz-dgR"/>
+                            <constraint firstItem="hiJ-XR-2OK" firstAttribute="leading" secondItem="plI-n8-9KI" secondAttribute="leading" constant="16" id="jkZ-du-Y56"/>
+                            <constraint firstItem="uAP-V8-04X" firstAttribute="leading" secondItem="gQ6-PC-wUj" secondAttribute="trailing" constant="8" id="nke-U0-36V"/>
+                            <constraint firstItem="9rJ-jQ-fhW" firstAttribute="leading" secondItem="Dbp-AL-bna" secondAttribute="trailing" constant="8" id="seW-kH-HjP"/>
+                            <constraint firstItem="gQ6-PC-wUj" firstAttribute="leading" secondItem="5Xj-K0-cl5" secondAttribute="trailing" constant="8" id="snv-jd-CHa"/>
+                            <constraint firstItem="5Xj-K0-cl5" firstAttribute="top" secondItem="clc-Oc-7IK" secondAttribute="bottom" constant="8" id="uWj-fO-gHJ"/>
+                            <constraint firstItem="QRt-LC-Y2I" firstAttribute="leading" secondItem="plI-n8-9KI" secondAttribute="leading" constant="131" id="wLN-85-CCu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HOZ-wH-qMr"/>
+                                <exclude reference="wLN-85-CCu"/>
+                                <exclude reference="7Z1-AG-nYK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="blackOutlet" destination="was-2P-lds" id="Nq4-t1-9S8"/>
+                        <outlet property="blueOutlet" destination="gQ6-PC-wUj" id="Ubh-PA-7sV"/>
+                        <outlet property="greenOutlet" destination="5Xj-K0-cl5" id="kX7-Pz-g2W"/>
+                        <outlet property="orangeOutlet" destination="Dbp-AL-bna" id="YRn-ZX-I1L"/>
+                        <outlet property="proceedButton" destination="VoU-H7-jk7" id="s0a-dV-dGv"/>
+                        <outlet property="purpleOutlet" destination="uAP-V8-04X" id="NDd-4L-CFc"/>
+                        <outlet property="redOutlet" destination="QRt-LC-Y2I" id="Dv8-gi-JGH"/>
+                        <outlet property="usernameField" destination="9OU-Vf-A2N" id="MYb-hP-Qt0"/>
+                        <outlet property="yellowOutlet" destination="9rJ-jQ-fhW" id="gPo-Pb-GZ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P8b-xq-ROD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2156" y="90"/>
+        </scene>
+        <!--Join Session View Controller-->
+        <scene sceneID="8QA-ub-fto">
+            <objects>
+                <viewController id="qu0-cu-xmE" customClass="JoinSessionViewController" customModule="StuffedAnimalMortalKombat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ovS-v7-fAs"/>
+                        <viewControllerLayoutGuide type="bottom" id="w8P-22-pYc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HbX-Fc-5Rw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STUFFED ANIMAL VIOLENCE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vY-qf-lsg">
+                                <rect key="frame" x="16" y="28" width="568" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="aPZ-sf-XkI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SteelfishRg-Italic" family="Steelfish" pointSize="40"/>
+                                <color key="textColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kK-Mn-H9x">
+                                <rect key="frame" x="16" y="538" width="568" height="54"/>
+                                <color key="backgroundColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Z4n-7C-GR1"/>
+                                    <constraint firstAttribute="width" constant="568" id="d3o-Ng-OIC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="38"/>
+                                <state key="normal">
+                                    <string key="title" base64-UTF8="YES">
+FVFVSVQ
+</string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="d3o-Ng-OIC"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="quitButton:" destination="qu0-cu-xmE" eventType="touchUpInside" id="U8l-ed-ist"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Searching Label." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztW-jj-X2D">
+                                <rect key="frame" x="16" y="84" width="568" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="I0C-M9-P4T"/>
+                                    <constraint firstAttribute="height" constant="34" id="UzQ-Bj-TL8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0np-u8-VO5">
+                                <rect key="frame" x="16" y="476" width="568" height="54"/>
+                                <color key="backgroundColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="PxA-oD-sgr"/>
+                                    <constraint firstAttribute="width" constant="568" id="jU7-aW-qSl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="38"/>
+                                <state key="normal" title="JOIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jU7-aW-qSl"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="joinButton:" destination="qu0-cu-xmE" eventType="touchUpInside" id="Fvl-GD-1wB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ztW-jj-X2D" firstAttribute="top" secondItem="4vY-qf-lsg" secondAttribute="bottom" constant="8" id="BOW-iV-5fu"/>
+                            <constraint firstItem="4vY-qf-lsg" firstAttribute="top" secondItem="ovS-v7-fAs" secondAttribute="bottom" constant="8" id="OlY-cC-g6V"/>
+                            <constraint firstAttribute="trailing" secondItem="ztW-jj-X2D" secondAttribute="trailing" constant="16" id="lKH-u4-iTj"/>
+                            <constraint firstAttribute="trailing" secondItem="4vY-qf-lsg" secondAttribute="trailing" constant="16" id="v25-Kk-Owc"/>
+                            <constraint firstItem="ztW-jj-X2D" firstAttribute="leading" secondItem="HbX-Fc-5Rw" secondAttribute="leading" constant="16" id="yIf-Zp-Mam"/>
+                            <constraint firstItem="4vY-qf-lsg" firstAttribute="leading" secondItem="HbX-Fc-5Rw" secondAttribute="leading" constant="16" id="z5J-TG-ch0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="joinButtonOutlet" destination="0np-u8-VO5" id="2a6-uL-EZq"/>
+                        <outlet property="sessionLabel" destination="ztW-jj-X2D" id="l2l-wN-T0e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z1S-FD-hoX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1454" y="90"/>
+        </scene>
         <!--Controller View Controller-->
         <scene sceneID="Hn5-el-lrV">
             <objects>
@@ -16,19 +396,392 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCZ-kU-slM">
-                                <rect key="frame" x="16" y="28" width="568" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dqi-4T-6GX" customClass="ControllerDecor" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                <rect key="frame" x="404" y="400" width="180" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I97-WH-rOJ" customClass="ControllerActionButtons" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                        <rect key="frame" x="65" y="8" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="I97-WH-rOJ" secondAttribute="height" multiplier="1:1" id="EHO-uy-Ngg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="31"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                                <color key="value" red="0.062749996779999997" green="0.45489999650000001" blue="0.7686300278" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="blueXButton:" destination="e5x-4S-Vnh" eventType="touchUpInside" id="JUa-I5-Ycm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4H-5e-KVA" customClass="ControllerActionButtons" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="65" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Z4H-5e-KVA" secondAttribute="height" multiplier="1:1" id="oUw-t5-vm9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="31"/>
+                                        <state key="normal" title="Y">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                                <color key="value" red="0.082350000739999998" green="0.61176002029999998" blue="0.43922001119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="greenYButton:" destination="e5x-4S-Vnh" eventType="touchUpInside" id="eZP-dH-n4v"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbc-Lt-s9C" customClass="ControllerActionButtons" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                        <rect key="frame" x="65" y="122" width="50" height="50"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tvm-xE-UW8" customClass="ControllerActionButtons" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                        <rect key="frame" x="65" y="122" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Tvm-xE-UW8" secondAttribute="height" multiplier="1:1" id="coe-Ki-QF6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="31"/>
+                                        <state key="normal" title="B">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                                <color key="value" red="0.99607998129999997" green="0.85882002120000001" blue="0.36078000069999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="yellowBButton:" destination="e5x-4S-Vnh" eventType="touchUpInside" id="crA-db-6Ye"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKI-6X-1FO" customClass="ControllerActionButtons" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                        <rect key="frame" x="122" y="65" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dKI-6X-1FO" secondAttribute="height" multiplier="1:1" id="jY5-HV-VDa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="31"/>
+                                        <state key="normal" title="A">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                                <color key="value" red="0.82744997740000004" green="0.12156999860000001" blue="0.16863000389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="redAButton:" destination="e5x-4S-Vnh" eventType="touchUpInside" id="5Yl-xN-DsW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Tvm-xE-UW8" secondAttribute="bottom" constant="8" id="3LS-lN-d4S"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tvm-xE-UW8" secondAttribute="trailing" constant="65" id="96G-Xl-7q1"/>
+                                    <constraint firstAttribute="trailing" secondItem="I97-WH-rOJ" secondAttribute="trailing" constant="65" id="Guh-Jd-5vK"/>
+                                    <constraint firstItem="Tvm-xE-UW8" firstAttribute="leading" secondItem="Dqi-4T-6GX" secondAttribute="leading" constant="65" id="PJA-HS-sth"/>
+                                    <constraint firstItem="I97-WH-rOJ" firstAttribute="leading" secondItem="Dqi-4T-6GX" secondAttribute="leading" constant="65" id="SnA-d3-YND"/>
+                                    <constraint firstItem="Z4H-5e-KVA" firstAttribute="top" secondItem="Dqi-4T-6GX" secondAttribute="top" constant="65" id="YlH-lp-A0i"/>
+                                    <constraint firstItem="dKI-6X-1FO" firstAttribute="top" secondItem="Dqi-4T-6GX" secondAttribute="top" constant="65" id="dxc-l7-fMz"/>
+                                    <constraint firstAttribute="width" secondItem="Dqi-4T-6GX" secondAttribute="height" multiplier="1:1" id="ibT-u9-Zad"/>
+                                    <constraint firstAttribute="bottom" secondItem="dKI-6X-1FO" secondAttribute="bottom" constant="65" id="jwa-Jq-6Az"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z4H-5e-KVA" secondAttribute="bottom" constant="65" id="kwx-S3-5Pl"/>
+                                    <constraint firstItem="I97-WH-rOJ" firstAttribute="top" secondItem="Dqi-4T-6GX" secondAttribute="top" constant="8" id="mNO-Sy-e6C"/>
+                                    <constraint firstAttribute="trailing" secondItem="dKI-6X-1FO" secondAttribute="trailing" constant="8" id="n4R-YZ-mRv"/>
+                                    <constraint firstItem="Z4H-5e-KVA" firstAttribute="leading" secondItem="Dqi-4T-6GX" secondAttribute="leading" constant="8" id="sZa-2E-OsO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                        <color key="value" red="0.69163066036596677" green="0.69249131939999997" blue="0.67745774984653473" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bEq-37-AXu" customClass="ControllerDecor" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                <rect key="frame" x="16" y="400" width="180" height="180"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Xi-Fv-Gcj" customClass="touchPadCircle" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="15" width="150" height="150"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zD7-M9-Ori">
+                                                <rect key="frame" x="52" y="0.0" width="46" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="zD7-M9-Ori" secondAttribute="height" multiplier="23:30" id="G8l-Ph-s4w"/>
+                                                    <constraint firstAttribute="height" constant="60" id="e5B-Xv-psY"/>
+                                                    <constraint firstAttribute="width" constant="46" id="tCa-hr-42M"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="39"/>
+                                                <state key="normal" title="△">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="e5B-Xv-psY"/>
+                                                        <exclude reference="tCa-hr-42M"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="upButton:" destination="e5x-4S-Vnh" eventType="touchUpInside" id="FXN-8f-Xth"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlD-tK-YDQ">
+                                                <rect key="frame" x="52" y="90" width="46" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="TlD-tK-YDQ" secondAttribute="height" multiplier="23:30" id="8kC-HO-BQu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="39"/>
+                                                <state key="normal" title="▽">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="downButton:" destination="e5x-4S-Vnh" eventType="touchUpInside" id="nVb-wn-Ls8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjw-w8-HS5">
+                                                <rect key="frame" x="104" y="45" width="46" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Rjw-w8-HS5" secondAttribute="height" multiplier="23:30" id="A8J-U9-OEn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="39"/>
+                                                <state key="normal" title="▷">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="rightButton:" destination="e5x-4S-Vnh" eventType="touchUpInside" id="T20-cA-XDe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHj-iy-TH4">
+                                                <rect key="frame" x="0.0" y="45" width="46" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="cHj-iy-TH4" secondAttribute="height" multiplier="23:30" id="0MG-Tq-guF"/>
+                                                    <constraint firstAttribute="height" constant="60" id="xGR-96-1Kw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="39"/>
+                                                <state key="normal" title="◁">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="xGR-96-1Kw"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="leftButton:" destination="e5x-4S-Vnh" eventType="touchUpInside" id="EGR-Ua-YFR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="zD7-M9-Ori" firstAttribute="leading" secondItem="cHj-iy-TH4" secondAttribute="trailing" constant="6" id="1Du-cB-gH8"/>
+                                            <constraint firstAttribute="bottom" secondItem="Rjw-w8-HS5" secondAttribute="bottom" constant="45" id="2jw-cm-C0m"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rjw-w8-HS5" secondAttribute="trailing" id="7lr-Xq-2sf"/>
+                                            <constraint firstItem="Rjw-w8-HS5" firstAttribute="leading" secondItem="TlD-tK-YDQ" secondAttribute="trailing" constant="6" id="8No-QW-5kh"/>
+                                            <constraint firstAttribute="bottom" secondItem="Rjw-w8-HS5" secondAttribute="bottom" constant="45" id="Aof-dE-vJx"/>
+                                            <constraint firstItem="Rjw-w8-HS5" firstAttribute="top" secondItem="6Xi-Fv-Gcj" secondAttribute="top" constant="45" id="FVG-M2-6V2"/>
+                                            <constraint firstItem="zD7-M9-Ori" firstAttribute="centerX" secondItem="6Xi-Fv-Gcj" secondAttribute="centerX" id="FlX-z2-ueJ"/>
+                                            <constraint firstItem="TlD-tK-YDQ" firstAttribute="leading" secondItem="cHj-iy-TH4" secondAttribute="trailing" constant="6" id="JLG-rw-RLz"/>
+                                            <constraint firstItem="zD7-M9-Ori" firstAttribute="top" secondItem="6Xi-Fv-Gcj" secondAttribute="top" id="KpV-dI-ywM"/>
+                                            <constraint firstItem="cHj-iy-TH4" firstAttribute="top" secondItem="6Xi-Fv-Gcj" secondAttribute="top" constant="45" id="Ldy-r7-OqU"/>
+                                            <constraint firstItem="zD7-M9-Ori" firstAttribute="leading" secondItem="cHj-iy-TH4" secondAttribute="trailing" constant="8" id="NXq-pK-XM8"/>
+                                            <constraint firstItem="zD7-M9-Ori" firstAttribute="leading" secondItem="cHj-iy-TH4" secondAttribute="trailing" constant="6" id="ObV-Hx-fH9"/>
+                                            <constraint firstItem="TlD-tK-YDQ" firstAttribute="top" secondItem="zD7-M9-Ori" secondAttribute="bottom" constant="30" id="TZn-yL-krt"/>
+                                            <constraint firstItem="TlD-tK-YDQ" firstAttribute="top" secondItem="zD7-M9-Ori" secondAttribute="bottom" constant="30" id="Uwu-sF-1mv"/>
+                                            <constraint firstItem="Rjw-w8-HS5" firstAttribute="leading" secondItem="zD7-M9-Ori" secondAttribute="trailing" constant="6" id="WfH-tB-kCo"/>
+                                            <constraint firstItem="Rjw-w8-HS5" firstAttribute="top" secondItem="6Xi-Fv-Gcj" secondAttribute="top" constant="45" id="XcS-w7-WCT"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rjw-w8-HS5" secondAttribute="trailing" id="XqY-PP-oxE"/>
+                                            <constraint firstItem="cHj-iy-TH4" firstAttribute="leading" secondItem="6Xi-Fv-Gcj" secondAttribute="leading" id="YYN-Cf-bqX"/>
+                                            <constraint firstItem="TlD-tK-YDQ" firstAttribute="top" secondItem="zD7-M9-Ori" secondAttribute="bottom" constant="30" id="ZIj-jD-Wtp"/>
+                                            <constraint firstAttribute="bottom" secondItem="cHj-iy-TH4" secondAttribute="bottom" constant="45" id="Zra-yy-hHh"/>
+                                            <constraint firstItem="Rjw-w8-HS5" firstAttribute="leading" secondItem="zD7-M9-Ori" secondAttribute="trailing" constant="6" id="a21-59-ZQW"/>
+                                            <constraint firstItem="zD7-M9-Ori" firstAttribute="top" secondItem="6Xi-Fv-Gcj" secondAttribute="top" id="ayt-Qm-Mzk"/>
+                                            <constraint firstItem="cHj-iy-TH4" firstAttribute="leading" secondItem="6Xi-Fv-Gcj" secondAttribute="leading" id="hCF-Tw-qHQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="TlD-tK-YDQ" secondAttribute="bottom" id="lLW-IM-3DT"/>
+                                            <constraint firstItem="cHj-iy-TH4" firstAttribute="top" secondItem="6Xi-Fv-Gcj" secondAttribute="top" constant="45" id="mKf-se-Sme"/>
+                                            <constraint firstAttribute="bottom" secondItem="cHj-iy-TH4" secondAttribute="bottom" constant="45" id="n22-P8-v0q"/>
+                                            <constraint firstItem="Rjw-w8-HS5" firstAttribute="leading" secondItem="TlD-tK-YDQ" secondAttribute="trailing" constant="6" id="seB-5k-N94"/>
+                                            <constraint firstItem="TlD-tK-YDQ" firstAttribute="leading" secondItem="cHj-iy-TH4" secondAttribute="trailing" constant="6" id="u0e-PX-Ynz"/>
+                                            <constraint firstItem="zD7-M9-Ori" firstAttribute="top" secondItem="6Xi-Fv-Gcj" secondAttribute="top" id="w7h-cl-6Zo"/>
+                                            <constraint firstItem="Rjw-w8-HS5" firstAttribute="leading" secondItem="zD7-M9-Ori" secondAttribute="trailing" constant="6" id="yI2-Y5-bLU"/>
+                                            <constraint firstAttribute="bottom" secondItem="TlD-tK-YDQ" secondAttribute="bottom" id="zc3-fV-0Wv"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="YYN-Cf-bqX"/>
+                                                <exclude reference="Zra-yy-hHh"/>
+                                                <exclude reference="mKf-se-Sme"/>
+                                                <exclude reference="FlX-z2-ueJ"/>
+                                                <exclude reference="KpV-dI-ywM"/>
+                                                <exclude reference="NXq-pK-XM8"/>
+                                                <exclude reference="ObV-Hx-fH9"/>
+                                                <exclude reference="ayt-Qm-Mzk"/>
+                                                <exclude reference="JLG-rw-RLz"/>
+                                                <exclude reference="TZn-yL-krt"/>
+                                                <exclude reference="Uwu-sF-1mv"/>
+                                                <exclude reference="ZIj-jD-Wtp"/>
+                                                <exclude reference="zc3-fV-0Wv"/>
+                                                <exclude reference="8No-QW-5kh"/>
+                                                <exclude reference="Aof-dE-vJx"/>
+                                                <exclude reference="XcS-w7-WCT"/>
+                                                <exclude reference="XqY-PP-oxE"/>
+                                                <exclude reference="a21-59-ZQW"/>
+                                                <exclude reference="yI2-Y5-bLU"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bEq-37-AXu" secondAttribute="height" multiplier="1:1" id="M5o-oI-TeQ"/>
+                                    <constraint firstItem="6Xi-Fv-Gcj" firstAttribute="leading" secondItem="bEq-37-AXu" secondAttribute="leading" constant="15" id="VFf-Oi-kwq"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Xi-Fv-Gcj" secondAttribute="bottom" constant="15" id="Vwu-Ky-HnZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Xi-Fv-Gcj" secondAttribute="trailing" constant="15" id="bKn-vH-Yv5"/>
+                                    <constraint firstItem="6Xi-Fv-Gcj" firstAttribute="top" secondItem="bEq-37-AXu" secondAttribute="top" constant="15" id="lvn-Zy-P0m"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                        <color key="value" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE: 0000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGD-AQ-P2E">
+                                <rect key="frame" x="211" y="400" width="185" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="NeM-cd-Lv9"/>
+                                    <constraint firstAttribute="height" constant="36" id="v5d-uv-Gze"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqg-Mx-pZV">
+                                <rect key="frame" x="235" y="444" width="131" height="36"/>
+                                <color key="backgroundColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="jej-Jx-eHF"/>
+                                    <constraint firstAttribute="width" constant="131" id="l34-x8-3yX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="20"/>
+                                <state key="normal" title="DISCONNECT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="disconnectButton:" destination="e5x-4S-Vnh" eventType="touchUpInside" id="8FW-VV-jPj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Health" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCU-Bt-HCk">
+                                <rect key="frame" x="16" y="28" width="192" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="Ljr-ph-aTB"/>
+                                    <constraint firstAttribute="width" constant="192" id="Lwu-6G-fL7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ice-6Q-vqy">
+                                <rect key="frame" x="392" y="28" width="192" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="qHt-8g-x98"/>
+                                    <constraint firstAttribute="width" constant="192" id="wNu-pu-swh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mL-ld-aei">
+                                <rect key="frame" x="16" y="54" width="260" height="55"/>
+                                <color key="backgroundColor" red="0.23534357572836417" green="0.19911425942779915" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="3Cl-f4-gx7"/>
+                                    <constraint firstAttribute="width" constant="260" id="tot-sQ-S8r"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIT-tV-QjA">
+                                <rect key="frame" x="263" y="504" width="75" height="30"/>
+                                <color key="backgroundColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Psu-Pw-f42"/>
+                                    <constraint firstAttribute="width" constant="75" id="wSQ-Z7-eUe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="21"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAB-zN-ll8">
+                                <rect key="frame" x="263" y="550" width="75" height="30"/>
+                                <color key="backgroundColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kuf-Kh-1YC"/>
+                                    <constraint firstAttribute="width" constant="75" id="vL1-BH-eNr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="21"/>
+                                <state key="normal" title="SELECT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRV-7e-wzL">
+                                <rect key="frame" x="324" y="54" width="260" height="55"/>
+                                <color key="backgroundColor" red="0.37921293929291955" green="1" blue="0.36720558190801489" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="iwS-8S-Nyb"/>
+                                    <constraint firstAttribute="height" constant="55" id="mGq-3q-Ubt"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vuF-eE-A0Y" firstAttribute="top" secondItem="nAB-zN-ll8" secondAttribute="bottom" constant="20" id="3Fp-pB-KHz"/>
+                            <constraint firstItem="0mL-ld-aei" firstAttribute="top" secondItem="oCU-Bt-HCk" secondAttribute="bottom" constant="8" id="5Sw-SZ-muU"/>
+                            <constraint firstAttribute="centerY" secondItem="Bqg-Mx-pZV" secondAttribute="centerY" constant="-162" id="65g-uM-LVM"/>
+                            <constraint firstAttribute="centerX" secondItem="rIT-tV-QjA" secondAttribute="centerX" constant="-0.5" id="8Jr-rv-1db"/>
+                            <constraint firstAttribute="trailing" secondItem="GRV-7e-wzL" secondAttribute="trailing" constant="16" id="8lF-68-3Zw"/>
+                            <constraint firstItem="nAB-zN-ll8" firstAttribute="top" secondItem="rIT-tV-QjA" secondAttribute="bottom" constant="16" id="Cec-I3-tY9"/>
+                            <constraint firstItem="vuF-eE-A0Y" firstAttribute="top" secondItem="Dqi-4T-6GX" secondAttribute="bottom" constant="20" id="D7s-5n-bsC"/>
+                            <constraint firstItem="GRV-7e-wzL" firstAttribute="top" secondItem="ice-6Q-vqy" secondAttribute="bottom" constant="8" id="GGd-4M-82c"/>
+                            <constraint firstItem="oCU-Bt-HCk" firstAttribute="leading" secondItem="4kS-6G-GUM" secondAttribute="leading" constant="16" id="GNT-bd-HV1"/>
+                            <constraint firstItem="oCU-Bt-HCk" firstAttribute="top" secondItem="D0K-Ft-qyS" secondAttribute="bottom" constant="8" id="GtC-kS-WGs"/>
+                            <constraint firstAttribute="centerX" secondItem="WGD-AQ-P2E" secondAttribute="centerX" constant="-3.5" id="HCM-M3-khy"/>
+                            <constraint firstItem="Bqg-Mx-pZV" firstAttribute="top" secondItem="WGD-AQ-P2E" secondAttribute="bottom" constant="8" id="RVk-FL-bkX"/>
+                            <constraint firstItem="vuF-eE-A0Y" firstAttribute="top" secondItem="bEq-37-AXu" secondAttribute="bottom" constant="20" id="Sei-d8-0H7"/>
+                            <constraint firstItem="bEq-37-AXu" firstAttribute="leading" secondItem="4kS-6G-GUM" secondAttribute="leading" constant="16" id="XhW-Nc-9MB"/>
+                            <constraint firstAttribute="centerX" secondItem="nAB-zN-ll8" secondAttribute="centerX" constant="-0.5" id="b5m-Jd-iRv"/>
+                            <constraint firstItem="0mL-ld-aei" firstAttribute="leading" secondItem="4kS-6G-GUM" secondAttribute="leading" constant="16" id="bDd-5l-Sq1"/>
+                            <constraint firstAttribute="centerX" secondItem="Bqg-Mx-pZV" secondAttribute="centerX" constant="-0.5" id="cG4-Qf-Qv8"/>
+                            <constraint firstItem="rIT-tV-QjA" firstAttribute="top" secondItem="Bqg-Mx-pZV" secondAttribute="bottom" constant="24" id="j0S-hj-91C"/>
+                            <constraint firstItem="ice-6Q-vqy" firstAttribute="top" secondItem="D0K-Ft-qyS" secondAttribute="bottom" constant="8" id="jxj-zH-Dr4"/>
+                            <constraint firstAttribute="trailing" secondItem="Dqi-4T-6GX" secondAttribute="trailing" constant="16" id="opb-lB-Wv0"/>
+                            <constraint firstAttribute="trailing" secondItem="ice-6Q-vqy" secondAttribute="trailing" constant="16" id="yA5-XA-FUR"/>
+                        </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPG-5m-QWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="370" y="329"/>
+            <point key="canvasLocation" x="-748" y="90"/>
         </scene>
     </scenes>
 </document>

@@ -1,5 +1,5 @@
 //
-//  ControllerViewController.swift
+//  JoinSessionViewController.swift
 //  StuffedAnimalMortalKombat
 //
 //  Created by Kyle Brooks Robinson on 6/9/15.
@@ -8,39 +8,25 @@
 
 import UIKit
 
+class JoinSessionViewController: UIViewController {
 
-
-class ControllerViewController: UIViewController {
-
-    @IBAction func upButton(sender: AnyObject) {
-    }
-    @IBAction func leftButton(sender: AnyObject) {
-    }
-    @IBAction func rightButton(sender: AnyObject) {
-    }
-    @IBAction func downButton(sender: AnyObject) {
+    @IBOutlet weak var sessionLabel: UILabel!
+    @IBOutlet weak var joinButtonOutlet: UIButton!
+    
+    @IBAction func joinButton(sender: AnyObject) {
+        
+        
     }
     
-    @IBAction func blueXButton(sender: AnyObject) {
+    @IBAction func quitButton(sender: AnyObject) {
+        
+        self.navigationController?.popToRootViewControllerAnimated(true)
+        
     }
-    @IBAction func greenYButton(sender: AnyObject) {
-    }
-    @IBAction func redAButton(sender: AnyObject) {
-    }
-    @IBAction func yellowBButton(sender: AnyObject) {
-    }
-    
-    
-    @IBAction func disconnectButton(sender: AnyObject) {
-    }
-    
-    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        Connector.sharedConnector().startAdvertising() //iPhone
 
         // Do any additional setup after loading the view.
     }

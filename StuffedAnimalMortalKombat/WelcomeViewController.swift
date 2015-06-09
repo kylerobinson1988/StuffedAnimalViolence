@@ -1,5 +1,5 @@
 //
-//  ControllerViewController.swift
+//  WelcomeViewController.swift
 //  StuffedAnimalMortalKombat
 //
 //  Created by Kyle Brooks Robinson on 6/9/15.
@@ -8,39 +8,32 @@
 
 import UIKit
 
+class WelcomeViewController: UIViewController {
 
-
-class ControllerViewController: UIViewController {
-
-    @IBAction func upButton(sender: AnyObject) {
+    @IBOutlet weak var usernameField: UITextField!
+    
+    @IBAction func redButton(sender: AnyObject) {
     }
-    @IBAction func leftButton(sender: AnyObject) {
+    @IBAction func orangeButton(sender: AnyObject) {
     }
-    @IBAction func rightButton(sender: AnyObject) {
+    @IBAction func yellowButton(sender: AnyObject) {
     }
-    @IBAction func downButton(sender: AnyObject) {
+    @IBAction func greenButton(sender: AnyObject) {
+    }
+    @IBAction func blueButton(sender: AnyObject) {
+    }
+    @IBAction func purpleButton(sender: AnyObject) {
+    }
+    @IBAction func blackButton(sender: AnyObject) {
     }
     
-    @IBAction func blueXButton(sender: AnyObject) {
+    @IBOutlet weak var proceedButton: UIButton!
+    @IBAction func proceedButtonPressed(sender: AnyObject) {
     }
-    @IBAction func greenYButton(sender: AnyObject) {
-    }
-    @IBAction func redAButton(sender: AnyObject) {
-    }
-    @IBAction func yellowBButton(sender: AnyObject) {
-    }
-    
-    
-    @IBAction func disconnectButton(sender: AnyObject) {
-    }
-    
-    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        Connector.sharedConnector().startAdvertising() //iPhone
 
         // Do any additional setup after loading the view.
     }
