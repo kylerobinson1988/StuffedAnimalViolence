@@ -11,10 +11,13 @@
 		91953BE71B2729C200602C59 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 91953BE61B2729C200602C59 /* GameScene.sks */; };
 		91953BE91B2729C200602C59 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953BE81B2729C200602C59 /* GameScene.swift */; };
 		91953BEB1B2729C200602C59 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953BEA1B2729C200602C59 /* GameViewController.swift */; };
-		91953BEE1B2729C200602C59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91953BEC1B2729C200602C59 /* Main.storyboard */; };
+		91953BEE1B2729C200602C59 /* iPadMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91953BEC1B2729C200602C59 /* iPadMain.storyboard */; };
 		91953BF01B2729C200602C59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91953BEF1B2729C200602C59 /* Images.xcassets */; };
 		91953BF31B2729C200602C59 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91953BF11B2729C200602C59 /* LaunchScreen.xib */; };
 		91953BFF1B2729C200602C59 /* StuffedAnimalMortalKombatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953BFE1B2729C200602C59 /* StuffedAnimalMortalKombatTests.swift */; };
+		91953C0A1B272C4700602C59 /* iPhoneMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91953C081B272C4700602C59 /* iPhoneMain.storyboard */; };
+		91953C0D1B273B6100602C59 /* ControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C0C1B273B6100602C59 /* ControllerViewController.swift */; };
+		91953C0F1B273C6E00602C59 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C0E1B273C6E00602C59 /* Connector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +37,15 @@
 		91953BE61B2729C200602C59 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		91953BE81B2729C200602C59 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		91953BEA1B2729C200602C59 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		91953BED1B2729C200602C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91953BED1B2729C200602C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPadMain.storyboard; sourceTree = "<group>"; };
 		91953BEF1B2729C200602C59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		91953BF21B2729C200602C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		91953BF81B2729C200602C59 /* StuffedAnimalMortalKombatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StuffedAnimalMortalKombatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91953BFD1B2729C200602C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91953BFE1B2729C200602C59 /* StuffedAnimalMortalKombatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StuffedAnimalMortalKombatTests.swift; sourceTree = "<group>"; };
+		91953C091B272C4700602C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPhoneMain.storyboard; sourceTree = "<group>"; };
+		91953C0C1B273B6100602C59 /* ControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerViewController.swift; sourceTree = "<group>"; };
+		91953C0E1B273C6E00602C59 /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +87,12 @@
 		91953BE11B2729C200602C59 /* StuffedAnimalMortalKombat */ = {
 			isa = PBXGroup;
 			children = (
-				91953BE41B2729C200602C59 /* AppDelegate.swift */,
-				91953BE61B2729C200602C59 /* GameScene.sks */,
-				91953BE81B2729C200602C59 /* GameScene.swift */,
 				91953BEA1B2729C200602C59 /* GameViewController.swift */,
-				91953BEC1B2729C200602C59 /* Main.storyboard */,
-				91953BEF1B2729C200602C59 /* Images.xcassets */,
-				91953BF11B2729C200602C59 /* LaunchScreen.xib */,
+				91953C0C1B273B6100602C59 /* ControllerViewController.swift */,
+				91953BEC1B2729C200602C59 /* iPadMain.storyboard */,
+				91953C081B272C4700602C59 /* iPhoneMain.storyboard */,
+				91953C101B273C7E00602C59 /* RandomStuff */,
+				91953C0B1B273B2C00602C59 /* GameFlow */,
 				91953BE21B2729C200602C59 /* Supporting Files */,
 			);
 			path = StuffedAnimalMortalKombat;
@@ -96,6 +101,9 @@
 		91953BE21B2729C200602C59 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				91953BE41B2729C200602C59 /* AppDelegate.swift */,
+				91953BEF1B2729C200602C59 /* Images.xcassets */,
+				91953BF11B2729C200602C59 /* LaunchScreen.xib */,
 				91953BE31B2729C200602C59 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -116,6 +124,23 @@
 				91953BFD1B2729C200602C59 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91953C0B1B273B2C00602C59 /* GameFlow */ = {
+			isa = PBXGroup;
+			children = (
+				91953BE81B2729C200602C59 /* GameScene.swift */,
+				91953BE61B2729C200602C59 /* GameScene.sks */,
+			);
+			name = GameFlow;
+			sourceTree = "<group>";
+		};
+		91953C101B273C7E00602C59 /* RandomStuff */ = {
+			isa = PBXGroup;
+			children = (
+				91953C0E1B273C6E00602C59 /* Connector.swift */,
+			);
+			name = RandomStuff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +225,9 @@
 			files = (
 				91953BF31B2729C200602C59 /* LaunchScreen.xib in Resources */,
 				91953BF01B2729C200602C59 /* Images.xcassets in Resources */,
+				91953C0A1B272C4700602C59 /* iPhoneMain.storyboard in Resources */,
 				91953BE71B2729C200602C59 /* GameScene.sks in Resources */,
-				91953BEE1B2729C200602C59 /* Main.storyboard in Resources */,
+				91953BEE1B2729C200602C59 /* iPadMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91953C0D1B273B6100602C59 /* ControllerViewController.swift in Sources */,
 				91953BE91B2729C200602C59 /* GameScene.swift in Sources */,
 				91953BEB1B2729C200602C59 /* GameViewController.swift in Sources */,
+				91953C0F1B273C6E00602C59 /* Connector.swift in Sources */,
 				91953BE51B2729C200602C59 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,12 +272,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		91953BEC1B2729C200602C59 /* Main.storyboard */ = {
+		91953BEC1B2729C200602C59 /* iPadMain.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				91953BED1B2729C200602C59 /* Base */,
 			);
-			name = Main.storyboard;
+			name = iPadMain.storyboard;
 			sourceTree = "<group>";
 		};
 		91953BF11B2729C200602C59 /* LaunchScreen.xib */ = {
@@ -258,6 +286,14 @@
 				91953BF21B2729C200602C59 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		91953C081B272C4700602C59 /* iPhoneMain.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91953C091B272C4700602C59 /* Base */,
+			);
+			name = iPhoneMain.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -353,6 +389,7 @@
 				INFOPLIST_FILE = StuffedAnimalMortalKombat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -363,6 +400,7 @@
 				INFOPLIST_FILE = StuffedAnimalMortalKombat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -419,6 +457,7 @@
 				91953C041B2729C200602C59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91953C051B2729C200602C59 /* Build configuration list for PBXNativeTarget "StuffedAnimalMortalKombatTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +466,7 @@
 				91953C071B2729C200602C59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
