@@ -18,6 +18,7 @@
 		91953C0A1B272C4700602C59 /* iPhoneMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91953C081B272C4700602C59 /* iPhoneMain.storyboard */; };
 		91953C0D1B273B6100602C59 /* ControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C0C1B273B6100602C59 /* ControllerViewController.swift */; };
 		91953C0F1B273C6E00602C59 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C0E1B273C6E00602C59 /* Connector.swift */; };
+		91953C251B2873B500602C59 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C241B2873B500602C59 /* Avatar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		91953C091B272C4700602C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPhoneMain.storyboard; sourceTree = "<group>"; };
 		91953C0C1B273B6100602C59 /* ControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerViewController.swift; sourceTree = "<group>"; };
 		91953C0E1B273C6E00602C59 /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
+		91953C241B2873B500602C59 /* Avatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				91953C0C1B273B6100602C59 /* ControllerViewController.swift */,
 				91953BEC1B2729C200602C59 /* iPadMain.storyboard */,
 				91953C081B272C4700602C59 /* iPhoneMain.storyboard */,
+				91953C231B28736C00602C59 /* Controller */,
 				91953C101B273C7E00602C59 /* RandomStuff */,
 				91953C0B1B273B2C00602C59 /* GameFlow */,
 				91953BE21B2729C200602C59 /* Supporting Files */,
@@ -141,6 +144,14 @@
 				91953C0E1B273C6E00602C59 /* Connector.swift */,
 			);
 			name = RandomStuff;
+			sourceTree = "<group>";
+		};
+		91953C231B28736C00602C59 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				91953C241B2873B500602C59 /* Avatar.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91953C251B2873B500602C59 /* Avatar.swift in Sources */,
 				91953C0D1B273B6100602C59 /* ControllerViewController.swift in Sources */,
 				91953BE91B2729C200602C59 /* GameScene.swift in Sources */,
 				91953BEB1B2729C200602C59 /* GameViewController.swift in Sources */,

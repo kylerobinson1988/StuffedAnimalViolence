@@ -55,6 +55,7 @@ class Connector: NSObject, MCSessionDelegate, MCNearbyServiceAdvertiserDelegate,
     
     func browser(browser: MCNearbyServiceBrowser!, foundPeer peerID: MCPeerID!, withDiscoveryInfo info: [NSObject : AnyObject]!) {
         
+        // The below line invites the peer.
         browser.invitePeer(peerID, toSession: session, withContext: nil, timeout: 30)
         
         
