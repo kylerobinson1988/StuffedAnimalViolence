@@ -62,7 +62,7 @@ import UIKit
         addDotAtDegrees(-45, withColor: lightEnergy, andContext: context)
         addDotAtDegrees(45, withColor: energyColor, andContext: context)
         
-        //Add current health. LOSE HEALTH: Points Decrease.
+        //Add current health. 
         CGContextSetBlendMode(context, kCGBlendModeSourceIn)
         let healthY = (1.0 - (healthPoints / 100)) * rect.height
         
@@ -86,7 +86,7 @@ import UIKit
         
         
         
-        //Add current energy.  LOSE ENERGY: Points Increase.
+        //Add current energy.
         CGContextSetBlendMode(context, kCGBlendModeSourceIn)
 
 
@@ -94,7 +94,7 @@ import UIKit
         
         lightEnergy.set()
         
-        let energyDegrees = Double(((energyPoints / 100) * 90) - 45)
+        let energyDegrees = Double(45 - ((energyPoints / 100) * 90))
         
         let energyAngle = CGFloat(DegreesToRadians(energyDegrees))
         
@@ -108,8 +108,8 @@ import UIKit
         CGContextAddLineToPoint(context, rect.height, 0)
         CGContextFillPath(context)
         
-        addDotAtDegrees(energyDegrees, withColor: energyColor, andContext: context)
         addDotAtDegrees(-45, withColor: lightEnergy, andContext: context)
+        addDotAtDegrees(energyDegrees, withColor: energyColor, andContext: context)
         
         
         //Avatar circle
