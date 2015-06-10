@@ -33,3 +33,18 @@ import UIKit
 
 }
 
+@IBDesignable class OtherButtons: UIButton {
+    
+    @IBInspectable var imageViewRadius: CGFloat = 1 {
+        
+        didSet {
+            
+            self.layer.cornerRadius = imageViewRadius
+            self.layer.masksToBounds = true
+            
+        }
+        
+    }
+    
+    
+}

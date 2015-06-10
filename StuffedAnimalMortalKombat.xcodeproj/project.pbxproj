@@ -22,7 +22,8 @@
 		91953C161B277CA400602C59 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C151B277CA400602C59 /* WelcomeViewController.swift */; };
 		91953C1A1B2781E300602C59 /* ControllerDecor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C191B2781E300602C59 /* ControllerDecor.swift */; };
 		91953C1C1B2781F600602C59 /* ControllerButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C1B1B2781F600602C59 /* ControllerButtons.swift */; };
-		91953C1E1B2791A700602C59 /* PowerBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C1D1B2791A700602C59 /* PowerBar.swift */; };
+		91953C211B2865E000602C59 /* steelfish rg it.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91953C1F1B2865E000602C59 /* steelfish rg it.ttf */; };
+		91953C221B2865E000602C59 /* steelfish rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91953C201B2865E000602C59 /* steelfish rg.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,11 +54,10 @@
 		91953C0E1B273C6E00602C59 /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
 		91953C111B277B9700602C59 /* JoinSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinSessionViewController.swift; sourceTree = "<group>"; };
 		91953C151B277CA400602C59 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		91953C171B277CFE00602C59 /* steelfish rg it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "steelfish rg it.ttf"; sourceTree = "<group>"; };
-		91953C181B277CFE00602C59 /* steelfish rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "steelfish rg.ttf"; sourceTree = "<group>"; };
 		91953C191B2781E300602C59 /* ControllerDecor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerDecor.swift; sourceTree = "<group>"; };
 		91953C1B1B2781F600602C59 /* ControllerButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerButtons.swift; sourceTree = "<group>"; };
-		91953C1D1B2791A700602C59 /* PowerBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerBar.swift; sourceTree = "<group>"; };
+		91953C1F1B2865E000602C59 /* steelfish rg it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "steelfish rg it.ttf"; sourceTree = "<group>"; };
+		91953C201B2865E000602C59 /* steelfish rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "steelfish rg.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +111,8 @@
 		91953BE21B2729C200602C59 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				91953C171B277CFE00602C59 /* steelfish rg it.ttf */,
-				91953C181B277CFE00602C59 /* steelfish rg.ttf */,
+				91953C1F1B2865E000602C59 /* steelfish rg it.ttf */,
+				91953C201B2865E000602C59 /* steelfish rg.ttf */,
 				91953BE41B2729C200602C59 /* AppDelegate.swift */,
 				91953BEF1B2729C200602C59 /* Images.xcassets */,
 				91953BF11B2729C200602C59 /* LaunchScreen.xib */,
@@ -153,7 +153,6 @@
 				91953C0E1B273C6E00602C59 /* Connector.swift */,
 				91953C191B2781E300602C59 /* ControllerDecor.swift */,
 				91953C1B1B2781F600602C59 /* ControllerButtons.swift */,
-				91953C1D1B2791A700602C59 /* PowerBar.swift */,
 			);
 			name = RandomStuff;
 			sourceTree = "<group>";
@@ -259,7 +258,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				91953BF31B2729C200602C59 /* LaunchScreen.xib in Resources */,
+				91953C221B2865E000602C59 /* steelfish rg.ttf in Resources */,
 				91953BF01B2729C200602C59 /* Images.xcassets in Resources */,
+				91953C211B2865E000602C59 /* steelfish rg it.ttf in Resources */,
 				91953C0A1B272C4700602C59 /* iPhoneMain.storyboard in Resources */,
 				91953BE71B2729C200602C59 /* GameScene.sks in Resources */,
 				91953BEE1B2729C200602C59 /* iPadMain.storyboard in Resources */,
@@ -285,7 +286,6 @@
 				91953BE91B2729C200602C59 /* GameScene.swift in Sources */,
 				91953C1C1B2781F600602C59 /* ControllerButtons.swift in Sources */,
 				91953BEB1B2729C200602C59 /* GameViewController.swift in Sources */,
-				91953C1E1B2791A700602C59 /* PowerBar.swift in Sources */,
 				91953C121B277B9700602C59 /* JoinSessionViewController.swift in Sources */,
 				91953C0F1B273C6E00602C59 /* Connector.swift in Sources */,
 				91953BE51B2729C200602C59 /* AppDelegate.swift in Sources */,

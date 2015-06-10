@@ -309,12 +309,14 @@
                                 <color key="textColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kK-Mn-H9x">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kK-Mn-H9x">
                                 <rect key="frame" x="16" y="538" width="568" height="54"/>
                                 <color key="backgroundColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="568" id="32W-3i-emP"/>
                                     <constraint firstAttribute="height" constant="54" id="Z4n-7C-GR1"/>
                                     <constraint firstAttribute="width" constant="568" id="d3o-Ng-OIC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="sw5-vd-UZV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="38"/>
                                 <state key="normal">
@@ -343,10 +345,12 @@ FVFVSVQ
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0np-u8-VO5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0np-u8-VO5">
                                 <rect key="frame" x="16" y="476" width="568" height="54"/>
                                 <color key="backgroundColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="2Xi-hK-WXB"/>
+                                    <constraint firstAttribute="width" constant="568" id="96C-EN-Sbp"/>
                                     <constraint firstAttribute="height" constant="54" id="PxA-oD-sgr"/>
                                     <constraint firstAttribute="width" constant="568" id="jU7-aW-qSl"/>
                                 </constraints>
@@ -367,9 +371,15 @@ FVFVSVQ
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2kK-Mn-H9x" secondAttribute="trailing" constant="16" id="3fy-7p-hZz"/>
+                            <constraint firstAttribute="trailing" secondItem="0np-u8-VO5" secondAttribute="trailing" constant="16" id="8DM-Nc-iQE"/>
                             <constraint firstItem="ztW-jj-X2D" firstAttribute="top" secondItem="4vY-qf-lsg" secondAttribute="bottom" constant="8" id="BOW-iV-5fu"/>
+                            <constraint firstItem="0np-u8-VO5" firstAttribute="leading" secondItem="HbX-Fc-5Rw" secondAttribute="leading" constant="16" id="L5x-Yv-0YY"/>
+                            <constraint firstItem="2kK-Mn-H9x" firstAttribute="leading" secondItem="HbX-Fc-5Rw" secondAttribute="leading" constant="16" id="Mvh-pw-ses"/>
                             <constraint firstItem="4vY-qf-lsg" firstAttribute="top" secondItem="ovS-v7-fAs" secondAttribute="bottom" constant="8" id="OlY-cC-g6V"/>
+                            <constraint firstItem="w8P-22-pYc" firstAttribute="top" secondItem="2kK-Mn-H9x" secondAttribute="bottom" constant="8" id="amI-8u-KFM"/>
                             <constraint firstAttribute="trailing" secondItem="ztW-jj-X2D" secondAttribute="trailing" constant="16" id="lKH-u4-iTj"/>
+                            <constraint firstItem="2kK-Mn-H9x" firstAttribute="top" secondItem="0np-u8-VO5" secondAttribute="bottom" constant="8" id="mMY-bs-mGe"/>
                             <constraint firstAttribute="trailing" secondItem="4vY-qf-lsg" secondAttribute="trailing" constant="16" id="v25-Kk-Owc"/>
                             <constraint firstItem="ztW-jj-X2D" firstAttribute="leading" secondItem="HbX-Fc-5Rw" secondAttribute="leading" constant="16" id="yIf-Zp-Mam"/>
                             <constraint firstItem="4vY-qf-lsg" firstAttribute="leading" secondItem="HbX-Fc-5Rw" secondAttribute="leading" constant="16" id="z5J-TG-ch0"/>
@@ -666,30 +676,14 @@ FVFVSVQ
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE: 0000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGD-AQ-P2E">
                                 <rect key="frame" x="211" y="400" width="185" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="185" id="NeM-cd-Lv9"/>
-                                    <constraint firstAttribute="height" constant="36" id="v5d-uv-Gze"/>
+                                    <constraint firstAttribute="height" constant="36" id="lAW-Vm-LbQ"/>
+                                    <constraint firstAttribute="width" constant="185" id="ruW-HG-wKm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqg-Mx-pZV">
-                                <rect key="frame" x="235" y="444" width="131" height="36"/>
-                                <color key="backgroundColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="jej-Jx-eHF"/>
-                                    <constraint firstAttribute="width" constant="131" id="l34-x8-3yX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="20"/>
-                                <state key="normal" title="DISCONNECT">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="disconnectButton:" destination="e5x-4S-Vnh" eventType="touchUpInside" id="8FW-VV-jPj"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Health" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCU-Bt-HCk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Health: 1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCU-Bt-HCk">
                                 <rect key="frame" x="16" y="28" width="192" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="Ljr-ph-aTB"/>
@@ -699,7 +693,7 @@ FVFVSVQ
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ice-6Q-vqy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power Level: 9001" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ice-6Q-vqy">
                                 <rect key="frame" x="392" y="28" width="192" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="qHt-8g-x98"/>
@@ -709,73 +703,125 @@ FVFVSVQ
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mL-ld-aei">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mL-ld-aei" customClass="healthEnergyView" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
                                 <rect key="frame" x="16" y="54" width="260" height="55"/>
                                 <color key="backgroundColor" red="0.23534357572836417" green="0.19911425942779915" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="3Cl-f4-gx7"/>
                                     <constraint firstAttribute="width" constant="260" id="tot-sQ-S8r"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageViewRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIT-tV-QjA">
-                                <rect key="frame" x="263" y="504" width="75" height="30"/>
-                                <color key="backgroundColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Psu-Pw-f42"/>
-                                    <constraint firstAttribute="width" constant="75" id="wSQ-Z7-eUe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="21"/>
-                                <state key="normal" title="START">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAB-zN-ll8">
-                                <rect key="frame" x="263" y="550" width="75" height="30"/>
-                                <color key="backgroundColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="kuf-Kh-1YC"/>
-                                    <constraint firstAttribute="width" constant="75" id="vL1-BH-eNr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="21"/>
-                                <state key="normal" title="SELECT">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRV-7e-wzL">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRV-7e-wzL" customClass="healthEnergyView" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
                                 <rect key="frame" x="324" y="54" width="260" height="55"/>
                                 <color key="backgroundColor" red="0.37921293929291955" green="1" blue="0.36720558190801489" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="iwS-8S-Nyb"/>
                                     <constraint firstAttribute="height" constant="55" id="mGq-3q-Ubt"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageViewRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIT-tV-QjA" customClass="OtherButtons" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                <rect key="frame" x="263" y="504" width="75" height="30"/>
+                                <color key="backgroundColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="QO9-P7-cbr"/>
+                                    <constraint firstAttribute="height" constant="30" id="iAq-9c-emP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="21"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageViewRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAB-zN-ll8" customClass="OtherButtons" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                <rect key="frame" x="263" y="550" width="75" height="30"/>
+                                <color key="backgroundColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kch-16-kaI"/>
+                                    <constraint firstAttribute="width" constant="75" id="rjZ-68-W5d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="21"/>
+                                <state key="normal" title="SELECT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageViewRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqg-Mx-pZV" customClass="OtherButtons" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
+                                <rect key="frame" x="235" y="444" width="131" height="36"/>
+                                <color key="backgroundColor" red="0.86716180099999995" green="0.090820784230000007" blue="0.15474236059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="D2M-8T-Zxp"/>
+                                    <constraint firstAttribute="height" constant="36" id="RP5-dg-frB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="20"/>
+                                <state key="normal" title="DISCONNECT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageViewRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="disconnectButton:" destination="e5x-4S-Vnh" eventType="touchUpInside" id="8FW-VV-jPj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vuF-eE-A0Y" firstAttribute="top" secondItem="nAB-zN-ll8" secondAttribute="bottom" constant="20" id="3Fp-pB-KHz"/>
+                            <constraint firstItem="rIT-tV-QjA" firstAttribute="top" secondItem="Bqg-Mx-pZV" secondAttribute="bottom" constant="24" id="0CQ-PQ-4e9"/>
                             <constraint firstItem="0mL-ld-aei" firstAttribute="top" secondItem="oCU-Bt-HCk" secondAttribute="bottom" constant="8" id="5Sw-SZ-muU"/>
-                            <constraint firstAttribute="centerY" secondItem="Bqg-Mx-pZV" secondAttribute="centerY" constant="-162" id="65g-uM-LVM"/>
-                            <constraint firstAttribute="centerX" secondItem="rIT-tV-QjA" secondAttribute="centerX" constant="-0.5" id="8Jr-rv-1db"/>
                             <constraint firstAttribute="trailing" secondItem="GRV-7e-wzL" secondAttribute="trailing" constant="16" id="8lF-68-3Zw"/>
-                            <constraint firstItem="nAB-zN-ll8" firstAttribute="top" secondItem="rIT-tV-QjA" secondAttribute="bottom" constant="16" id="Cec-I3-tY9"/>
+                            <constraint firstAttribute="centerY" secondItem="nAB-zN-ll8" secondAttribute="centerY" constant="-265" id="8y7-kM-OIL"/>
+                            <constraint firstAttribute="centerY" secondItem="WGD-AQ-P2E" secondAttribute="centerY" constant="-118" id="BNz-PK-Gf4"/>
                             <constraint firstItem="vuF-eE-A0Y" firstAttribute="top" secondItem="Dqi-4T-6GX" secondAttribute="bottom" constant="20" id="D7s-5n-bsC"/>
+                            <constraint firstAttribute="centerX" secondItem="rIT-tV-QjA" secondAttribute="centerX" constant="-0.5" id="ELQ-0O-xwp"/>
                             <constraint firstItem="GRV-7e-wzL" firstAttribute="top" secondItem="ice-6Q-vqy" secondAttribute="bottom" constant="8" id="GGd-4M-82c"/>
                             <constraint firstItem="oCU-Bt-HCk" firstAttribute="leading" secondItem="4kS-6G-GUM" secondAttribute="leading" constant="16" id="GNT-bd-HV1"/>
                             <constraint firstItem="oCU-Bt-HCk" firstAttribute="top" secondItem="D0K-Ft-qyS" secondAttribute="bottom" constant="8" id="GtC-kS-WGs"/>
-                            <constraint firstAttribute="centerX" secondItem="WGD-AQ-P2E" secondAttribute="centerX" constant="-3.5" id="HCM-M3-khy"/>
-                            <constraint firstItem="Bqg-Mx-pZV" firstAttribute="top" secondItem="WGD-AQ-P2E" secondAttribute="bottom" constant="8" id="RVk-FL-bkX"/>
+                            <constraint firstAttribute="centerX" secondItem="WGD-AQ-P2E" secondAttribute="centerX" constant="-3.5" id="Ip8-Zs-qa4"/>
+                            <constraint firstAttribute="centerX" secondItem="Bqg-Mx-pZV" secondAttribute="centerX" constant="-0.5" id="K4E-P0-Ifl"/>
+                            <constraint firstAttribute="centerY" secondItem="Bqg-Mx-pZV" secondAttribute="centerY" constant="-162" id="KCI-GY-GNa"/>
                             <constraint firstItem="vuF-eE-A0Y" firstAttribute="top" secondItem="bEq-37-AXu" secondAttribute="bottom" constant="20" id="Sei-d8-0H7"/>
+                            <constraint firstItem="nAB-zN-ll8" firstAttribute="top" secondItem="rIT-tV-QjA" secondAttribute="bottom" constant="16" id="WWK-du-EgG"/>
                             <constraint firstItem="bEq-37-AXu" firstAttribute="leading" secondItem="4kS-6G-GUM" secondAttribute="leading" constant="16" id="XhW-Nc-9MB"/>
-                            <constraint firstAttribute="centerX" secondItem="nAB-zN-ll8" secondAttribute="centerX" constant="-0.5" id="b5m-Jd-iRv"/>
                             <constraint firstItem="0mL-ld-aei" firstAttribute="leading" secondItem="4kS-6G-GUM" secondAttribute="leading" constant="16" id="bDd-5l-Sq1"/>
-                            <constraint firstAttribute="centerX" secondItem="Bqg-Mx-pZV" secondAttribute="centerX" constant="-0.5" id="cG4-Qf-Qv8"/>
-                            <constraint firstItem="rIT-tV-QjA" firstAttribute="top" secondItem="Bqg-Mx-pZV" secondAttribute="bottom" constant="24" id="j0S-hj-91C"/>
+                            <constraint firstAttribute="centerX" secondItem="nAB-zN-ll8" secondAttribute="centerX" constant="-0.5" id="csM-aF-2rk"/>
+                            <constraint firstItem="vuF-eE-A0Y" firstAttribute="top" secondItem="nAB-zN-ll8" secondAttribute="bottom" constant="20" id="dt3-ju-Z44"/>
+                            <constraint firstItem="Bqg-Mx-pZV" firstAttribute="top" secondItem="WGD-AQ-P2E" secondAttribute="bottom" constant="8" id="eyh-Vw-QOH"/>
                             <constraint firstItem="ice-6Q-vqy" firstAttribute="top" secondItem="D0K-Ft-qyS" secondAttribute="bottom" constant="8" id="jxj-zH-Dr4"/>
                             <constraint firstAttribute="trailing" secondItem="Dqi-4T-6GX" secondAttribute="trailing" constant="16" id="opb-lB-Wv0"/>
+                            <constraint firstAttribute="centerY" secondItem="rIT-tV-QjA" secondAttribute="centerY" constant="-219" id="t4W-Ec-1BG"/>
                             <constraint firstAttribute="trailing" secondItem="ice-6Q-vqy" secondAttribute="trailing" constant="16" id="yA5-XA-FUR"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BNz-PK-Gf4"/>
+                                <exclude reference="KCI-GY-GNa"/>
+                                <exclude reference="t4W-Ec-1BG"/>
+                                <exclude reference="8y7-kM-OIL"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>

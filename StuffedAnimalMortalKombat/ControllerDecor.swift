@@ -39,3 +39,22 @@ import UIKit
     
 }
 
+@IBDesignable class healthEnergyView: UIView {
+    
+    @IBInspectable var imageViewRadius: CGFloat = 15 {
+        
+        didSet {
+            
+            self.layer.cornerRadius = imageViewRadius
+            self.layer.masksToBounds = true
+        }
+    }
+    
+}
+
+
+
+
+
+
+
