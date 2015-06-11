@@ -26,6 +26,9 @@ class Connector: NSObject, MCSessionDelegate, MCNearbyServiceAdvertiserDelegate,
     
     var myInfo: [String:AnyObject] = [:]
     
+    var gameBoard: GameViewController?
+    var controller: ControllerViewController?
+    
     func startBrowsing() { //iPad
         
         myPeerID = MCPeerID(displayName: "World")
@@ -90,6 +93,9 @@ class Connector: NSObject, MCSessionDelegate, MCNearbyServiceAdvertiserDelegate,
     }
     
     func session(session: MCSession!, didReceiveStream stream: NSInputStream!, withName streamName: String!, fromPeer peerID: MCPeerID!) {
+        
+        
+        
         
     }
     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9118AB191B29EC3D00B3E1D5 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9118AB181B29EC3D00B3E1D5 /* Functions.swift */; };
+		9118AB1B1B2A252F00B3E1D5 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9118AB1A1B2A252F00B3E1D5 /* StatusView.swift */; };
 		91953BE51B2729C200602C59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953BE41B2729C200602C59 /* AppDelegate.swift */; };
 		91953BE71B2729C200602C59 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 91953BE61B2729C200602C59 /* GameScene.sks */; };
 		91953BE91B2729C200602C59 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953BE81B2729C200602C59 /* GameScene.swift */; };
@@ -19,6 +21,8 @@
 		91953C0D1B273B6100602C59 /* ControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C0C1B273B6100602C59 /* ControllerViewController.swift */; };
 		91953C0F1B273C6E00602C59 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C0E1B273C6E00602C59 /* Connector.swift */; };
 		91953C251B2873B500602C59 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C241B2873B500602C59 /* Avatar.swift */; };
+		91953C271B29C34400602C59 /* MoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C261B29C34400602C59 /* MoveButton.swift */; };
+		91953C291B29D14100602C59 /* PawButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953C281B29D14100602C59 /* PawButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9118AB181B29EC3D00B3E1D5 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		9118AB1A1B2A252F00B3E1D5 /* StatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		91953BDF1B2729C200602C59 /* StuffedAnimalMortalKombat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StuffedAnimalMortalKombat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91953BE31B2729C200602C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91953BE41B2729C200602C59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +54,8 @@
 		91953C0C1B273B6100602C59 /* ControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerViewController.swift; sourceTree = "<group>"; };
 		91953C0E1B273C6E00602C59 /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
 		91953C241B2873B500602C59 /* Avatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
+		91953C261B29C34400602C59 /* MoveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveButton.swift; sourceTree = "<group>"; };
+		91953C281B29D14100602C59 /* PawButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PawButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				91953C0E1B273C6E00602C59 /* Connector.swift */,
+				9118AB181B29EC3D00B3E1D5 /* Functions.swift */,
+				9118AB1A1B2A252F00B3E1D5 /* StatusView.swift */,
 			);
 			name = RandomStuff;
 			sourceTree = "<group>";
@@ -149,7 +159,9 @@
 		91953C231B28736C00602C59 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				91953C261B29C34400602C59 /* MoveButton.swift */,
 				91953C241B2873B500602C59 /* Avatar.swift */,
+				91953C281B29D14100602C59 /* PawButton.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -257,10 +269,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				91953C251B2873B500602C59 /* Avatar.swift in Sources */,
+				91953C271B29C34400602C59 /* MoveButton.swift in Sources */,
+				9118AB191B29EC3D00B3E1D5 /* Functions.swift in Sources */,
 				91953C0D1B273B6100602C59 /* ControllerViewController.swift in Sources */,
+				9118AB1B1B2A252F00B3E1D5 /* StatusView.swift in Sources */,
 				91953BE91B2729C200602C59 /* GameScene.swift in Sources */,
 				91953BEB1B2729C200602C59 /* GameViewController.swift in Sources */,
 				91953C0F1B273C6E00602C59 /* Connector.swift in Sources */,
+				91953C291B29D14100602C59 /* PawButton.swift in Sources */,
 				91953BE51B2729C200602C59 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

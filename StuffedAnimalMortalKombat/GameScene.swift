@@ -8,38 +8,85 @@
 
 import SpriteKit
 
+//protocol GameSceneRef {
+//    
+//    func playerJoined()
+//    func playerLeft()
+//
+//    
+//}
+
 class GameScene: SKScene {
+    
+    
+    let playerCount: CGFloat = 8
+    let statsPadding: CGFloat = 20
+    var playerStatsWidth: CGFloat!
+    
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
         
-        self.addChild(myLabel)
+ 
+           playerStatsWidth = (view.bounds.width - (statsPadding * (playerCount + 1))) / playerCount
+
     }
+    
+            
+        
+    
+    
+    // Player Movement Functions
+    
+    // Player Attack Functions
+    
+    
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         /* Called when a touch begins */
-        
-        for touch in (touches as! Set<UITouch>) {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
-        }
+//        
+//        for touch in (touches as! Set<UITouch>) {
+//            let location = touch.locationInNode(self)
+//            
+//            let sprite = SKSpriteNode(imageNamed:"Spaceship")
+//            
+//            sprite.xScale = 0.5
+//            sprite.yScale = 0.5
+//            sprite.position = location
+//            
+//            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
+//            
+//            sprite.runAction(SKAction.repeatActionForever(action))
+//            
+//            self.addChild(sprite)
+//        }
     }
    
+    var sunRotation: Double = 0
+    
     override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+
+        if let sun = childNodeWithName("Sun") {
+            
+            let radius = DistanceBetweenPoint1(sun.position, andPoint2: position)
+            
+            sunRotation = sunRotation < 360 ? sunRotation + 1.5 : 0
+            
+            let angle = CGFloat(DegreesToRadians(sunRotation))
+          
+            sun.position.x = position.x + radius * cos(angle) + view!.center.x
+            sun.position.y = position.y + radius * sin(angle) + view!.center.y
+
+            
+        }
+    
     }
+    
 }
+
+
+
+
+
+
+
+
+
