@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E3CBE210-D97C-4173-8F2B-79E7BD82D3A0</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>StuffedAnimalMortalKombat</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>941921368E7A7713E6B337E8D76F3EE255CF2B0F</key>
 		<string>https://github.com/kylerobinson1988/StuffedAnimalViolence.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>StuffedAnimalMortalKombat.xcodeproj/project.xcworkspace</string>
+	<string>StuffedAnimalMortalKombat.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>941921368E7A7713E6B337E8D76F3EE255CF2B0F</key>
