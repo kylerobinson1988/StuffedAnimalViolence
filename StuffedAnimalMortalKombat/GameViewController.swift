@@ -8,6 +8,7 @@
 
 import UIKit
 import SpriteKit
+import MultipeerConnectivity
 
 extension SKNode {
     class func unarchiveFromFile(file : String) -> SKNode? {
@@ -49,21 +50,80 @@ class GameViewController: UIViewController {
         }
     }
     
-    func playerJoined() {
+    var playerViews: [PlayerStats] = []
+    
+    func playerJoined(peerID: MCPeerID) {
         
         // Add stats area
         
         // Add player sprite mode
         
+        if let playerVC = storyboard?.instantiateViewControllerWithIdentifier("playerStats") as? UIViewController {
+            
+            let playerView = playerVC.view as! PlayerStats
+           
+            playerView.playerName.text = peerID.displayName
+            
+            playerViews.append(playerView)
+            
+        }
+        
+        layoutPlayerStats()
         
     }
     
-    func playerLeft() {
+    func playerLeft(peerID: MCPeerID) {
         
         // Remove stats area & update stats layout if stats area was not at end
         
         // Remove player sprite node (possibly by exploding them)
 
+        var foundPlayerViewIndex: Int?
+        
+        for (p,playerView) in enumerate(playerViews) {
+            
+            if playerView.playerName.text == peerID.displayName {
+                
+                foundPlayerViewIndex = p
+                
+            }
+            
+        }
+        
+        if let foundPlayerViewIndex = foundPlayerViewIndex {
+            
+            playerViews[foundPlayerViewIndex].removeFromSuperview()
+            playerViews.removeAtIndex(foundPlayerViewIndex)
+            
+        }
+        
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            
+            self.layoutPlayerStats()
+            
+        })
+        
+        layoutPlayerStats()
+        
+    }
+    
+    func layoutPlayerStats() {
+        
+        let padding: CGFloat = 20
+        let maxPlayers: CGFloat = 8
+        
+        let playerStatsWidth = (view.frame.width - (padding * (maxPlayers + 1))) / maxPlayers
+        
+        for (p,playerView) in enumerate(playerViews) {
+            
+            view.addSubview(playerView)
+            
+            let x = (playerStatsWidth + padding) * CGFloat(p) + padding
+            
+            playerView.frame = CGRectMake(x, 20, playerStatsWidth, 300)
+            
+        }
+        
     }
 
     override func shouldAutorotate() -> Bool {

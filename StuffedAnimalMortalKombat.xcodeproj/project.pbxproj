@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9118AB191B29EC3D00B3E1D5 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9118AB181B29EC3D00B3E1D5 /* Functions.swift */; };
-		9118AB1B1B2A252F00B3E1D5 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9118AB1A1B2A252F00B3E1D5 /* StatusView.swift */; };
+		9147A6CD1B2B129C00D21AC8 /* PlayerStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9147A6CC1B2B129C00D21AC8 /* PlayerStats.swift */; };
+		9147A6CF1B2B13C200D21AC8 /* StatsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9147A6CE1B2B13C200D21AC8 /* StatsBar.swift */; };
+		9147A6D11B2B141000D21AC8 /* StatsKills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9147A6D01B2B141000D21AC8 /* StatsKills.swift */; };
+		9147A6D31B2B141A00D21AC8 /* StatsLives.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9147A6D21B2B141A00D21AC8 /* StatsLives.swift */; };
+		9147A6D51B2B1BF500D21AC8 /* mensch-thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9147A6D41B2B1BF500D21AC8 /* mensch-thin.ttf */; };
+		9147A6D81B2B1E8D00D21AC8 /* mensch.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9147A6D61B2B1E8D00D21AC8 /* mensch.ttf */; };
+		9147A6D91B2B1E8D00D21AC8 /* mensch-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9147A6D71B2B1E8D00D21AC8 /* mensch-bold.ttf */; };
 		91953BE51B2729C200602C59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953BE41B2729C200602C59 /* AppDelegate.swift */; };
 		91953BE71B2729C200602C59 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 91953BE61B2729C200602C59 /* GameScene.sks */; };
 		91953BE91B2729C200602C59 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91953BE81B2729C200602C59 /* GameScene.swift */; };
@@ -37,7 +43,14 @@
 
 /* Begin PBXFileReference section */
 		9118AB181B29EC3D00B3E1D5 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
-		9118AB1A1B2A252F00B3E1D5 /* StatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		9147A6CC1B2B129C00D21AC8 /* PlayerStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerStats.swift; sourceTree = "<group>"; };
+		9147A6CE1B2B13C200D21AC8 /* StatsBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsBar.swift; sourceTree = "<group>"; };
+		9147A6D01B2B141000D21AC8 /* StatsKills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsKills.swift; sourceTree = "<group>"; };
+		9147A6D21B2B141A00D21AC8 /* StatsLives.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsLives.swift; sourceTree = "<group>"; };
+		9147A6D41B2B1BF500D21AC8 /* mensch-thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mensch-thin.ttf"; sourceTree = "<group>"; };
+		9147A6D61B2B1E8D00D21AC8 /* mensch.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mensch.ttf; sourceTree = "<group>"; };
+		9147A6D71B2B1E8D00D21AC8 /* mensch-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mensch-bold.ttf"; sourceTree = "<group>"; };
+		9147A6DA1B2B244500D21AC8 /* Math.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Math.playground; sourceTree = "<group>"; };
 		91953BDF1B2729C200602C59 /* StuffedAnimalMortalKombat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StuffedAnimalMortalKombat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91953BE31B2729C200602C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91953BE41B2729C200602C59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +125,9 @@
 		91953BE21B2729C200602C59 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9147A6D41B2B1BF500D21AC8 /* mensch-thin.ttf */,
+				9147A6D61B2B1E8D00D21AC8 /* mensch.ttf */,
+				9147A6D71B2B1E8D00D21AC8 /* mensch-bold.ttf */,
 				91953BE41B2729C200602C59 /* AppDelegate.swift */,
 				91953BEF1B2729C200602C59 /* Images.xcassets */,
 				91953BF11B2729C200602C59 /* LaunchScreen.xib */,
@@ -140,8 +156,12 @@
 		91953C0B1B273B2C00602C59 /* GameFlow */ = {
 			isa = PBXGroup;
 			children = (
-				91953BE81B2729C200602C59 /* GameScene.swift */,
 				91953BE61B2729C200602C59 /* GameScene.sks */,
+				91953BE81B2729C200602C59 /* GameScene.swift */,
+				9147A6CE1B2B13C200D21AC8 /* StatsBar.swift */,
+				9147A6D21B2B141A00D21AC8 /* StatsLives.swift */,
+				9147A6D01B2B141000D21AC8 /* StatsKills.swift */,
+				9147A6CC1B2B129C00D21AC8 /* PlayerStats.swift */,
 			);
 			name = GameFlow;
 			sourceTree = "<group>";
@@ -151,7 +171,7 @@
 			children = (
 				91953C0E1B273C6E00602C59 /* Connector.swift */,
 				9118AB181B29EC3D00B3E1D5 /* Functions.swift */,
-				9118AB1A1B2A252F00B3E1D5 /* StatusView.swift */,
+				9147A6DA1B2B244500D21AC8 /* Math.playground */,
 			);
 			name = RandomStuff;
 			sourceTree = "<group>";
@@ -249,8 +269,11 @@
 				91953BF31B2729C200602C59 /* LaunchScreen.xib in Resources */,
 				91953BF01B2729C200602C59 /* Images.xcassets in Resources */,
 				91953C0A1B272C4700602C59 /* iPhoneMain.storyboard in Resources */,
+				9147A6D81B2B1E8D00D21AC8 /* mensch.ttf in Resources */,
+				9147A6D51B2B1BF500D21AC8 /* mensch-thin.ttf in Resources */,
 				91953BE71B2729C200602C59 /* GameScene.sks in Resources */,
 				91953BEE1B2729C200602C59 /* iPadMain.storyboard in Resources */,
+				9147A6D91B2B1E8D00D21AC8 /* mensch-bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,15 +291,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9147A6D11B2B141000D21AC8 /* StatsKills.swift in Sources */,
 				91953C251B2873B500602C59 /* Avatar.swift in Sources */,
 				91953C271B29C34400602C59 /* MoveButton.swift in Sources */,
 				9118AB191B29EC3D00B3E1D5 /* Functions.swift in Sources */,
 				91953C0D1B273B6100602C59 /* ControllerViewController.swift in Sources */,
-				9118AB1B1B2A252F00B3E1D5 /* StatusView.swift in Sources */,
 				91953BE91B2729C200602C59 /* GameScene.swift in Sources */,
+				9147A6D31B2B141A00D21AC8 /* StatsLives.swift in Sources */,
 				91953BEB1B2729C200602C59 /* GameViewController.swift in Sources */,
 				91953C0F1B273C6E00602C59 /* Connector.swift in Sources */,
 				91953C291B29D14100602C59 /* PawButton.swift in Sources */,
+				9147A6CF1B2B13C200D21AC8 /* StatsBar.swift in Sources */,
+				9147A6CD1B2B129C00D21AC8 /* PlayerStats.swift in Sources */,
 				91953BE51B2729C200602C59 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

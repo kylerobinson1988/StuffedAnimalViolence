@@ -113,6 +113,23 @@ class Connector: NSObject, MCSessionDelegate, MCNearbyServiceAdvertiserDelegate,
         
         println("state \(stateArray[state.rawValue]) to " + peerID.displayName)
         
+        switch state {
+            
+        case .NotConnected :
+            
+            gameBoard?.playerLeft(peerID)
+            
+        case .Connecting : //connecting
+            
+            println("Do Not Want")
+            
+        case .Connected : //connected
+            
+            gameBoard?.playerJoined(peerID)
+
+            
+        }
+        
     }
 
 }
