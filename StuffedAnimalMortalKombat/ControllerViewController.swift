@@ -10,6 +10,25 @@ import UIKit
 
 class ControllerViewController: UIViewController {
 
+    @IBAction func pressedUp(sender: AnyObject) {
+        
+        let info = ["action":"jump"]
+        
+        if let data = NSJSONSerialization.dataWithJSONObject(info, options: NSJSONWritingOptions.allZeros, error: nil) {
+            
+            Connector.sharedConnector().sendDataToWorld(data)
+            
+        }
+        
+    }
+    
+    @IBAction func pressedLeft(sender: AnyObject) {
+    }
+    @IBAction func pressedRight(sender: AnyObject) {
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

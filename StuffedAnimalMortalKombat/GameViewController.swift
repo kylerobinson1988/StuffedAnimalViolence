@@ -27,14 +27,18 @@ extension SKNode {
 }
 
 class GameViewController: UIViewController {
+    
+    var scene: GameScene!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         Connector.sharedConnector().gameBoard = self
         Connector.sharedConnector().startBrowsing() //iPad command.
+        
+        scene = GameScene.unarchiveFromFile("GameScene") as? GameScene
 
-        if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
+        if let scene = scene {
             // Configure the view.
             let skView = self.view as! SKView
             skView.showsFPS = true
@@ -62,10 +66,12 @@ class GameViewController: UIViewController {
             
             let playerView = playerVC.view as! PlayerStats
            
+            playerView.playerLives.lifeCount = 3
             playerView.playerName.text = peerID.displayName
             
             playerViews.append(playerView)
             
+            scene?.playerJoined(peerID.displayName)
         }
         
         layoutPlayerStats()
@@ -82,13 +88,18 @@ class GameViewController: UIViewController {
         
         for (p,playerView) in enumerate(playerViews) {
             
-            if playerView.playerName.text == peerID.displayName {
+            if let name = playerView.playerName.text, peerName = peerID.displayName where name == peerName {
                 
                 foundPlayerViewIndex = p
+                scene?.playerLeft(name)
                 
             }
             
         }
+        
+        //remove all playerViews
+        
+        for playerView in playerViews { playerView.removeFromSuperview() }
         
         if let foundPlayerViewIndex = foundPlayerViewIndex {
             
@@ -97,11 +108,6 @@ class GameViewController: UIViewController {
             
         }
         
-        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            
-            self.layoutPlayerStats()
-            
-        })
         
         layoutPlayerStats()
         

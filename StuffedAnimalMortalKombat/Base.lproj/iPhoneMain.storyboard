@@ -47,6 +47,9 @@
                                         <color key="value" red="0.15685999389999999" green="0.7960799932" blue="0.84706002469999997" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressedUp:" destination="e5x-4S-Vnh" eventType="touchUpInside" id="7Aw-Mb-2xw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmM-RI-rbf" customClass="PawButton" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
                                 <rect key="frame" x="593" y="264" width="100" height="100"/>
@@ -137,6 +140,9 @@
                                         <color key="value" red="0.15685999389999999" green="0.7960799932" blue="0.84706002469999997" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressedRIght:" destination="e5x-4S-Vnh" eventType="touchUpInside" id="wNW-Hr-wfI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dU-ZQ-6lY" customClass="MoveButton" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
                                 <rect key="frame" x="16" y="264" width="100" height="100"/>
@@ -169,6 +175,9 @@
                                         <color key="value" red="0.15685999389999999" green="0.7960799932" blue="0.84706002469999997" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressedLeft:" destination="e5x-4S-Vnh" eventType="touchUpInside" id="5D8-Xp-pe5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wz-J1-35g" customClass="PawButton" customModule="StuffedAnimalMortalKombat" customModuleProvider="target">
                                 <rect key="frame" x="527" y="156" width="100" height="100"/>
